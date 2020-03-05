@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--require meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Womack Projects</title>
+    <!--Bootstrap styles-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/1c87e40b2c.js" crossorigin="anonymous"></script>
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
+    <!--Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="/public/css/style.css" />
+
+</head>
+
+<body>
+
+
+    <div class="container container-fluid col-lg-10" id="header">
+        <div class="rounded jumbotron jumbotron-container" id="jumbotronRound">
+            <h1 class="button hvr-grow" href="/views/home.html">Tetris</h1>
+            <h2>Womack Projects Edition</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="container container-fluid col-lg-5" id="header">
+            <div class="rounded" style="text-align: center;" id="controls">
+                <h2>Controls</h2>
+                <p>Use the arrow keys on your keyboard or click the buttons below!</p>
+                <p style="color: white; display: inline; margin: 5px;">Left: Left Arrow Key </p>
+                <p style="color: white; display: inline; margin: 5px;">Right: Right Arrow Key </p>
+                <p style="color: white; display: inline; margin: 5px;">Down: Down Arrow Key </p>
+                </br>
+                <p style="color: white; display: inline; margin: 5px;">Rotate Right: W</p>
+                <p style="color: white; display: inline; margin: 5px;">Rotate Left: Q</p>
+            </div>
+
+        </br>
+            <h2 id="startBtn" class="border rounded button hvr-grow" style="cursor:pointer; padding: 2vh;">Start!</h2>
+            <p>Note: Clicking the start button after beginning will reset your game!</p>
+
+            <div class="container container-fluid" id="header">
+                <h3 class="hvr-grow">Score</h3>
+                </br>
+                <h3 class="hvr-grow" id="score"></h3>
+            </div>
+            <div>
+                <canvas id="tetris" width="240" height="400"></canvas>
+                </br>
+                </br>
+                <i id="leftArrow" class="fas fa-arrow-left" style="font-size: 4vh; margin-right: 6vh;"></i>
+                <i id="rotateBtn" class="fas fa-sync" style="font-size: 4vh;"></i>
+                <i id="rightArrow" class="fas fa-arrow-right" style="margin-left: 6vh; font-size: 4vh;;"></i>
+                </br>
+                </br>
+                <i id="downArrow" class="fas fa-arrow-down" style="font-size: 4vh;"></i>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--Jquery scripts-->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <!--Bootstrap Scripts-->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!--scripts.js-->
+    <script src="/public/js/scripts.js"></script>
+    <script src="/public/js/tetris.js"></script>
+
+</body>
+
+
+<footer>
+
+</footer>
+
+</html>
